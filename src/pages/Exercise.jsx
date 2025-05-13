@@ -1,8 +1,21 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
-export default function Exercise() {
-  const { exerciseId } = useParams();
+const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18]);
+
+const loadExercise = async (exerciseId) => {
+  const importPath = exercisesIsFolder.has(parseInt(exerciseId, 10))
+    ? `./exercises/exercise${exerciseId}/Exercise${exerciseId}`
+    : `./exercises/Exercise${exerciseId}`;
+
+  const { default: component } = await import(
+    /* @vite-ignore */
+    importPath
+  );
+  return component;
+};
+
+function ExerciseContent({ exerciseId }) {
   const [exercise, setExercise] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -10,10 +23,7 @@ export default function Exercise() {
   useEffect(() => {
     const fetchExercise = async () => {
       try {
-        const { default: ExerciseComponent } = await import(
-          /* @vite-ignore */
-          `./exercises/Exercise${exerciseId}`
-        );
+        const ExerciseComponent = await loadExercise(exerciseId);
         setExercise(() => ExerciseComponent);
       } catch {
         setError(
@@ -36,11 +46,18 @@ export default function Exercise() {
   if (!exercise) {
     return <div>Exercise not found</div>;
   }
+
   const ExerciseComponent = exercise;
+  return <ExerciseComponent />;
+}
+
+export default function Exercise() {
+  const { exerciseId } = useParams();
+
   return (
     <main>
       <h1>Exercise {exerciseId}</h1>
-      <ExerciseComponent />
+      <ExerciseContent exerciseId={exerciseId} />
     </main>
   );
 }
