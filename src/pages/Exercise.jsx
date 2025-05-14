@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useParams } from "react-router";
 
-const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18]);
+const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18, 21]);
 
 const loadExercise = async (exerciseId) => {
   const importPath = exercisesIsFolder.has(parseInt(exerciseId, 10))
