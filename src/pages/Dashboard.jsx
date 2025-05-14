@@ -7,7 +7,7 @@ const exercises = Array.from({ length: exercisesCount }, (_, i) => i + 1);
 export default function Dashboard() {
   return (
     <>
-      <header>
+      <header id="header">
         <nav className={classes.nav}>
           <NavLink to="/">Home</NavLink>
           {exercises.map((id) => (

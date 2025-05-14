@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { useParams } from "react-router";
 
 const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18]);
@@ -51,13 +52,26 @@ function ExerciseContent({ exerciseId }) {
   return <ExerciseComponent />;
 }
 
+function IFrame({ children }) {
+  const [ref, setRef] = useState();
+  const container = ref?.contentWindow?.document?.body;
+
+  return (
+    <iframe ref={setRef}>
+      {container && createPortal(children, container)}
+    </iframe>
+  );
+}
+
 export default function Exercise() {
   const { exerciseId } = useParams();
 
   return (
-    <main>
+    <main id="main">
       <h1>Exercise {exerciseId}</h1>
-      <ExerciseContent exerciseId={exerciseId} />
+      <IFrame>
+        <ExerciseContent exerciseId={exerciseId} />
+      </IFrame>
     </main>
   );
 }
