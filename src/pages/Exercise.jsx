@@ -42,7 +42,12 @@ function ExerciseContent({ exerciseId }) {
     return <div>Loading...</div>;
   }
   if (error) {
-    return <div>{error}</div>;
+    return (
+      <div>
+        <p>{error}</p>
+        <button onClick={() => window.location.reload()}>Reload</button>
+      </div>
+    );
   }
   if (!exercise) {
     return <div>Exercise not found</div>;
@@ -53,12 +58,18 @@ function ExerciseContent({ exerciseId }) {
 }
 
 function IFrame({ children }) {
-  const [ref, setRef] = useState();
-  const container = ref?.contentWindow?.document?.body;
+  const [iframeBody, setIframeBody] = useState(null);
+
+  const handleLoad = (e) => {
+    const iframe = e.target;
+    if (iframe?.contentDocument) {
+      setIframeBody(iframe.contentDocument.body);
+    }
+  };
 
   return (
-    <iframe ref={setRef}>
-      {container && createPortal(children, container)}
+    <iframe srcDoc={`<!DOCTYPE html>`} onLoad={handleLoad}>
+      {iframeBody && createPortal(children, iframeBody)}
     </iframe>
   );
 }
