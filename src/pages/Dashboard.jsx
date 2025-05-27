@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router";
 import classes from "./Dashboard.module.css";
 
-const exercisesCount = 26;
+const exercisesCount = 30;
 const exercises = Array.from({ length: exercisesCount }, (_, i) => i + 1);
 
 export default function Dashboard() {
