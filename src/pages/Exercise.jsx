@@ -1,5 +1,6 @@
+import { ErrorBoundary } from "react-error-boundary";
+
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { useParams } from "react-router";
 
 const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18, 21]);
@@ -57,20 +58,13 @@ function ExerciseContent({ exerciseId }) {
   return <ExerciseComponent />;
 }
 
-function IFrame({ children }) {
-  const [iframeBody, setIframeBody] = useState(null);
-
-  const handleLoad = (e) => {
-    const iframe = e.target;
-    if (iframe?.contentDocument) {
-      setIframeBody(iframe.contentDocument.body);
-    }
-  };
-
+function FallbackComponent({ error, resetErrorBoundary }) {
   return (
-    <iframe srcDoc={`<!DOCTYPE html>`} onLoad={handleLoad}>
-      {iframeBody && createPortal(children, iframeBody)}
-    </iframe>
+    <div>
+      <p>Something went wrong while rendering the exercise.</p>
+      <pre style={{ color: "red" }}>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>Try again</button>
+    </div>
   );
 }
 
@@ -80,9 +74,13 @@ export default function Exercise() {
   return (
     <main id="main">
       <h1>Exercise {exerciseId}</h1>
-      <IFrame>
+      <ErrorBoundary
+        FallbackComponent={FallbackComponent}
+        onReset={() => window.location.reload()}
+        resetKeys={[exerciseId]}
+      >
         <ExerciseContent exerciseId={exerciseId} />
-      </IFrame>
+      </ErrorBoundary>
     </main>
   );
 }
