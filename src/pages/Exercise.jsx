@@ -3,7 +3,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
-const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18, 21]);
+const exercisesIsFolder = new Set([5, 10, 11, 12, 16, 17, 18, 21, 27, 28, 29]);
 
 const loadExercise = async (exerciseId) => {
   const importPath = exercisesIsFolder.has(parseInt(exerciseId, 10))
