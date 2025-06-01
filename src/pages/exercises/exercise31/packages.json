@@ -1,0 +1,3164 @@
+{
+  "eslint": {
+    "analyzedAt": "2023-01-15T11:49:37.162Z",
+    "collected": {
+      "metadata": {
+        "name": "eslint",
+        "scope": "unscoped",
+        "version": "8.32.0",
+        "description": "An AST-based pattern checker for JavaScript.",
+        "keywords": [
+          "ast",
+          "lint",
+          "javascript",
+          "ecmascript",
+          "espree"
+        ],
+        "date": "2023-01-15T04:15:12.648Z",
+        "author": {
+          "name": "Nicholas C. Zakas",
+          "email": "nicholas+npm@nczconsulting.com"
+        },
+        "publisher": {
+          "username": "eslintbot",
+          "email": "nicholas+eslint@nczconsulting.com"
+        },
+        "maintainers": [
+          {
+            "username": "openjsfoundation",
+            "email": "npm@openjsf.org"
+          },
+          {
+            "username": "eslintbot",
+            "email": "nicholas+eslint@nczconsulting.com"
+          },
+          {
+            "username": "nzakas",
+            "email": "nicholas@nczconsulting.com"
+          },
+          {
+            "username": "ivolodin",
+            "email": "ivolodin@gmail.com"
+          }
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/eslint/eslint.git"
+        },
+        "links": {
+          "npm": "https://www.npmjs.com/package/eslint",
+          "homepage": "https://eslint.org",
+          "repository": "https://github.com/eslint/eslint",
+          "bugs": "https://github.com/eslint/eslint/issues/"
+        },
+        "license": "MIT",
+        "dependencies": {
+          "@eslint/eslintrc": "^1.4.1",
+          "@humanwhocodes/config-array": "^0.11.8",
+          "@humanwhocodes/module-importer": "^1.0.1",
+          "@nodelib/fs.walk": "^1.2.8",
+          "ajv": "^6.10.0",
+          "chalk": "^4.0.0",
+          "cross-spawn": "^7.0.2",
+          "debug": "^4.3.2",
+          "doctrine": "^3.0.0",
+          "escape-string-regexp": "^4.0.0",
+          "eslint-scope": "^7.1.1",
+          "eslint-utils": "^3.0.0",
+          "eslint-visitor-keys": "^3.3.0",
+          "espree": "^9.4.0",
+          "esquery": "^1.4.0",
+          "esutils": "^2.0.2",
+          "fast-deep-equal": "^3.1.3",
+          "file-entry-cache": "^6.0.1",
+          "find-up": "^5.0.0",
+          "glob-parent": "^6.0.2",
+          "globals": "^13.19.0",
+          "grapheme-splitter": "^1.0.4",
+          "ignore": "^5.2.0",
+          "import-fresh": "^3.0.0",
+          "imurmurhash": "^0.1.4",
+          "is-glob": "^4.0.0",
+          "is-path-inside": "^3.0.3",
+          "js-sdsl": "^4.1.4",
+          "js-yaml": "^4.1.0",
+          "json-stable-stringify-without-jsonify": "^1.0.1",
+          "levn": "^0.4.1",
+          "lodash.merge": "^4.6.2",
+          "minimatch": "^3.1.2",
+          "natural-compare": "^1.4.0",
+          "optionator": "^0.9.1",
+          "regexpp": "^3.2.0",
+          "strip-ansi": "^6.0.1",
+          "strip-json-comments": "^3.1.0",
+          "text-table": "^0.2.0"
+        },
+        "devDependencies": {
+          "@babel/core": "^7.4.3",
+          "@babel/preset-env": "^7.4.3",
+          "babel-loader": "^8.0.5",
+          "c8": "^7.12.0",
+          "chai": "^4.0.1",
+          "cheerio": "^0.22.0",
+          "common-tags": "^1.8.0",
+          "core-js": "^3.1.3",
+          "ejs": "^3.0.2",
+          "eslint": "file:.",
+          "eslint-config-eslint": "file:packages/eslint-config-eslint",
+          "eslint-plugin-eslint-comments": "^3.2.0",
+          "eslint-plugin-eslint-plugin": "^4.4.0",
+          "eslint-plugin-internal-rules": "file:tools/internal-rules",
+          "eslint-plugin-jsdoc": "^38.1.6",
+          "eslint-plugin-n": "^15.2.4",
+          "eslint-plugin-unicorn": "^42.0.0",
+          "eslint-release": "^3.2.0",
+          "eslump": "^3.0.0",
+          "esprima": "^4.0.1",
+          "fast-glob": "^3.2.11",
+          "fs-teardown": "^0.1.3",
+          "glob": "^7.1.6",
+          "got": "^11.8.3",
+          "gray-matter": "^4.0.3",
+          "karma": "^6.1.1",
+          "karma-chrome-launcher": "^3.1.0",
+          "karma-mocha": "^2.0.1",
+          "karma-mocha-reporter": "^2.2.5",
+          "karma-webpack": "^5.0.0",
+          "lint-staged": "^11.0.0",
+          "load-perf": "^0.2.0",
+          "markdownlint": "^0.25.1",
+          "markdownlint-cli": "^0.31.1",
+          "marked": "^4.0.8",
+          "memfs": "^3.0.1",
+          "metascraper": "^5.25.7",
+          "metascraper-description": "^5.25.7",
+          "metascraper-image": "^5.29.3",
+          "metascraper-logo": "^5.25.7",
+          "metascraper-logo-favicon": "^5.25.7",
+          "metascraper-title": "^5.25.7",
+          "mocha": "^8.3.2",
+          "mocha-junit-reporter": "^2.0.0",
+          "node-polyfill-webpack-plugin": "^1.0.3",
+          "npm-license": "^0.3.3",
+          "pirates": "^4.0.5",
+          "progress": "^2.0.3",
+          "proxyquire": "^2.0.1",
+          "puppeteer": "^13.7.0",
+          "recast": "^0.20.4",
+          "regenerator-runtime": "^0.13.2",
+          "semver": "^7.3.5",
+          "shelljs": "^0.8.2",
+          "sinon": "^11.0.0",
+          "temp": "^0.9.0",
+          "webpack": "^5.23.0",
+          "webpack-cli": "^4.5.0",
+          "yorkie": "^2.0.0"
+        },
+        "releases": [
+          {
+            "from": "2022-12-16T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 2
+          },
+          {
+            "from": "2022-10-17T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 6
+          },
+          {
+            "from": "2022-07-19T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 12
+          },
+          {
+            "from": "2022-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 26
+          },
+          {
+            "from": "2021-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 54
+          }
+        ],
+        "hasTestScript": true,
+        "hasSelectiveFiles": true,
+        "readme": "[![npm version](https://img.shields.io/npm/v/eslint.svg)](https://www.npmjs.com/package/eslint)\n[![Downloads](https://img.shields.io/npm/dm/eslint.svg)](https://www.npmjs.com/package/eslint)\n[![Build Status](https://github.com/eslint/eslint/workflows/CI/badge.svg)](https://github.com/eslint/eslint/actions)\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint?ref=badge_shield)\n<br />\n[![Open Collective Backers](https://img.shields.io/opencollective/backers/eslint)](https://opencollective.com/eslint)\n[![Open Collective Sponsors](https://img.shields.io/opencollective/sponsors/eslint)](https://opencollective.com/eslint)\n[![Follow us on Twitter](https://img.shields.io/twitter/follow/geteslint?label=Follow&style=social)](https://twitter.com/intent/user?screen_name=geteslint)\n\n# ESLint\n\n[Website](https://eslint.org) |\n[Configuring](https://eslint.org/docs/latest/use/configure) |\n[Rules](https://eslint.org/docs/rules/) |\n[Contributing](https://eslint.org/docs/latest/contribute) |\n[Reporting Bugs](https://eslint.org/docs/latest/contribute/report-bugs) |\n[Code of Conduct](https://eslint.org/conduct) |\n[Twitter](https://twitter.com/geteslint) |\n[Mailing List](https://groups.google.com/group/eslint) |\n[Chat Room](https://eslint.org/chat)\n\nESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. In many ways, it is similar to JSLint and JSHint with a few exceptions:\n\n* ESLint uses [Espree](https://github.com/eslint/espree) for JavaScript parsing.\n* ESLint uses an AST to evaluate patterns in code.\n* ESLint is completely pluggable, every single rule is a plugin and you can add more at runtime.\n\n## Table of Contents\n\n1. [Installation and Usage](#installation-and-usage)\n2. [Configuration](#configuration)\n3. [Code of Conduct](#code-of-conduct)\n4. [Filing Issues](#filing-issues)\n5. [Frequently Asked Questions](#frequently-asked-questions)\n6. [Releases](#releases)\n7. [Security Policy](#security-policy)\n8. [Semantic Versioning Policy](#semantic-versioning-policy)\n9. [Stylistic Rule Updates](#stylistic-rule-updates)\n10. [License](#license)\n11. [Team](#team)\n12. [Sponsors](#sponsors)\n13. [Technology Sponsors](#technology-sponsors)\n\n## Installation and Usage\n\nPrerequisites: [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`, or `>=16.0.0`) built with SSL support. (If you are using an official Node.js distribution, SSL is always built in.)\n\nYou can install and configure ESLint using this command:\n\n```shell\nnpm init @eslint/config\n```\n\nAfter that, you can run ESLint on any file or directory like this:\n\n```shell\n./node_modules/.bin/eslint yourfile.js\n```\n\n## Configuration\n\nAfter running `npm init @eslint/config`, you'll have a `.eslintrc` file in your directory. In it, you'll see some rules configured like this:\n\n```json\n{\n    \"rules\": {\n        \"semi\": [\"error\", \"always\"],\n        \"quotes\": [\"error\", \"double\"]\n    }\n}\n```\n\nThe names `\"semi\"` and `\"quotes\"` are the names of [rules](https://eslint.org/docs/rules) in ESLint. The first value is the error level of the rule and can be one of these values:\n\n* `\"off\"` or `0` - turn the rule off\n* `\"warn\"` or `1` - turn the rule on as a warning (doesn't affect exit code)\n* `\"error\"` or `2` - turn the rule on as an error (exit code will be 1)\n\nThe three error levels allow you fine-grained control over how ESLint applies rules (for more configuration options and details, see the [configuration docs](https://eslint.org/docs/latest/use/configure)).\n\n## Code of Conduct\n\nESLint adheres to the [JS Foundation Code of Conduct](https://eslint.org/conduct).\n\n## Filing Issues\n\nBefore filing an issue, please be sure to read the guidelines for what you're reporting:\n\n* [Bug Report](https://eslint.org/docs/latest/contribute/report-bugs)\n* [Propose a New Rule](https://eslint.org/docs/latest/contribute/propose-new-rule)\n* [Proposing a Rule Change](https://eslint.org/docs/latest/contribute/propose-rule-change)\n* [Request a Change](https://eslint.org/docs/latest/contribute/request-change)\n\n## Frequently Asked Questions\n\n### I'm using JSCS, should I migrate to ESLint?\n\nYes. [JSCS has reached end of life](https://eslint.org/blog/2016/07/jscs-end-of-life) and is no longer supported.\n\nWe have prepared a [migration guide](https://eslint.org/docs/latest/use/migrating-from-jscs) to help you convert your JSCS settings to an ESLint configuration.\n\nWe are now at or near 100% compatibility with JSCS. If you try ESLint and believe we are not yet compatible with a JSCS rule/configuration, please create an issue (mentioning that it is a JSCS compatibility issue) and we will evaluate it as per our normal process.\n\n### Does Prettier replace ESLint?\n\nNo, ESLint does both traditional linting (looking for problematic patterns) and style checking (enforcement of conventions). You can use ESLint for everything, or you can combine both using Prettier to format your code and ESLint to catch possible errors.\n\n### Why can't ESLint find my plugins?\n\n* Make sure your plugins (and ESLint) are both in your project's `package.json` as devDependencies (or dependencies, if your project uses ESLint at runtime).\n* Make sure you have run `npm install` and all your dependencies are installed.\n* Make sure your plugins' peerDependencies have been installed as well. You can use `npm view eslint-plugin-myplugin peerDependencies` to see what peer dependencies `eslint-plugin-myplugin` has.\n\n### Does ESLint support JSX?\n\nYes, ESLint natively supports parsing JSX syntax (this must be enabled in [configuration](https://eslint.org/docs/latest/use/configure)). Please note that supporting JSX syntax *is not* the same as supporting React. React applies specific semantics to JSX syntax that ESLint doesn't recognize. We recommend using [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) if you are using React and want React semantics.\n\n### What ECMAScript versions does ESLint support?\n\nESLint has full support for ECMAScript 3, 5 (default), 2015, 2016, 2017, 2018, 2019, 2020, 2021 and 2022. You can set your desired ECMAScript syntax (and other settings, like global variables or your target environments) through [configuration](https://eslint.org/docs/latest/use/configure).\n\n### What about experimental features?\n\nESLint's parser only officially supports the latest final ECMAScript standard. We will make changes to core rules in order to avoid crashes on stage 3 ECMAScript syntax proposals (as long as they are implemented using the correct experimental ESTree syntax). We may make changes to core rules to better work with language extensions (such as JSX, Flow, and TypeScript) on a case-by-case basis.\n\nIn other cases (including if rules need to warn on more or fewer cases due to new syntax, rather than just not crashing), we recommend you use other parsers and/or rule plugins. If you are using Babel, you can use [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) and [@babel/eslint-plugin](https://www.npmjs.com/package/@babel/eslint-plugin) to use any option available in Babel.\n\nOnce a language feature has been adopted into the ECMAScript standard (stage 4 according to the [TC39 process](https://tc39.github.io/process-document/)), we will accept issues and pull requests related to the new feature, subject to our [contributing guidelines](https://eslint.org/docs/latest/contribute). Until then, please use the appropriate parser and plugin(s) for your experimental feature.\n\n### Where to ask for help?\n\nJoin our [Mailing List](https://groups.google.com/group/eslint) or [Chatroom](https://eslint.org/chat).\n\n### Why doesn't ESLint lock dependency versions?\n\nLock files like `package-lock.json` are helpful for deployed applications. They ensure that dependencies are consistent between environments and across deployments.\n\nPackages like `eslint` that get published to the npm registry do not include lock files. `npm install eslint` as a user will respect version constraints in ESLint's `package.json`. ESLint and its dependencies will be included in the user's lock file if one exists, but ESLint's own lock file would not be used.\n\nWe intentionally don't lock dependency versions so that we have the latest compatible dependency versions in development and CI that our users get when installing ESLint in a project.\n\nThe Twilio blog has a [deeper dive](https://www.twilio.com/blog/lockfiles-nodejs) to learn more.\n\n## Releases\n\nWe have scheduled releases every two weeks on Friday or Saturday. You can follow a [release issue](https://github.com/eslint/eslint/issues?q=is%3Aopen+is%3Aissue+label%3Arelease) for updates about the scheduling of any particular release.\n\n## Security Policy\n\nESLint takes security seriously. We work hard to ensure that ESLint is safe for everyone and that security issues are addressed quickly and responsibly. Read the full [security policy](https://github.com/eslint/.github/blob/master/SECURITY.md).\n\n## Semantic Versioning Policy\n\nESLint follows [semantic versioning](https://semver.org). However, due to the nature of ESLint as a code quality tool, it's not always clear when a minor or major version bump occurs. To help clarify this for everyone, we've defined the following semantic versioning policy for ESLint:\n\n* Patch release (intended to not break your lint build)\n    * A bug fix in a rule that results in ESLint reporting fewer linting errors.\n    * A bug fix to the CLI or core (including formatters).\n    * Improvements to documentation.\n    * Non-user-facing changes such as refactoring code, adding, deleting, or modifying tests, and increasing test coverage.\n    * Re-releasing after a failed release (i.e., publishing a release that doesn't work for anyone).\n* Minor release (might break your lint build)\n    * A bug fix in a rule that results in ESLint reporting more linting errors.\n    * A new rule is created.\n    * A new option to an existing rule that does not result in ESLint reporting more linting errors by default.\n    * A new addition to an existing rule to support a newly-added language feature (within the last 12 months) that will result in ESLint reporting more linting errors by default.\n    * An existing rule is deprecated.\n    * A new CLI capability is created.\n    * New capabilities to the public API are added (new classes, new methods, new arguments to existing methods, etc.).\n    * A new formatter is created.\n    * `eslint:recommended` is updated and will result in strictly fewer linting errors (e.g., rule removals).\n* Major release (likely to break your lint build)\n    * `eslint:recommended` is updated and may result in new linting errors (e.g., rule additions, most rule option updates).\n    * A new option to an existing rule that results in ESLint reporting more linting errors by default.\n    * An existing formatter is removed.\n    * Part of the public API is removed or changed in an incompatible way. The public API includes:\n        * Rule schemas\n        * Configuration schema\n        * Command-line options\n        * Node.js API\n        * Rule, formatter, parser, plugin APIs\n\nAccording to our policy, any minor update may report more linting errors than the previous release (ex: from a bug fix). As such, we recommend using the tilde (`~`) in `package.json` e.g. `\"eslint\": \"~3.1.0\"` to guarantee the results of your builds.\n\n## Stylistic Rule Updates\n\nStylistic rules are frozen according to [our policy](https://eslint.org/blog/2020/05/changes-to-rules-policies) on how we evaluate new rules and rule changes.\nThis means:\n\n* **Bug fixes**: We will still fix bugs in stylistic rules.\n* **New ECMAScript features**: We will also make sure stylistic rules are compatible with new ECMAScript features.\n* **New options**: We will **not** add any new options to stylistic rules unless an option is the only way to fix a bug or support a newly-added ECMAScript feature.\n\n## License\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint?ref=badge_large)\n\n## Team\n\nThese folks keep the project moving and are resources for help.\n\n<!-- NOTE: This section is autogenerated. Do not manually edit.-->\n\n<!--teamstart-->\n\n### Technical Steering Committee (TSC)\n\nThe people who manage releases, review feature requests, and meet regularly to ensure ESLint is properly maintained.\n\n<table><tbody><tr><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/nzakas\">\n<img src=\"https://github.com/nzakas.png?s=75\" width=\"75\" height=\"75\"><br />\nNicholas C. Zakas\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/btmills\">\n<img src=\"https://github.com/btmills.png?s=75\" width=\"75\" height=\"75\"><br />\nBrandon Mills\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/mdjermanovic\">\n<img src=\"https://github.com/mdjermanovic.png?s=75\" width=\"75\" height=\"75\"><br />\nMilos Djermanovic\n</a>\n</td></tr></tbody></table>\n\n### Reviewers\n\nThe people who review and implement new features.\n\n<table><tbody><tr><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/aladdin-add\">\n<img src=\"https://github.com/aladdin-add.png?s=75\" width=\"75\" height=\"75\"><br />\n唯然\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/snitin315\">\n<img src=\"https://github.com/snitin315.png?s=75\" width=\"75\" height=\"75\"><br />\nNitin Kumar\n</a>\n</td></tr></tbody></table>\n\n### Committers\n\nThe people who review and fix bugs and help triage issues.\n\n<table><tbody><tr><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/bmish\">\n<img src=\"https://github.com/bmish.png?s=75\" width=\"75\" height=\"75\"><br />\nBryan Mishkin\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/SaraSoueidan\">\n<img src=\"https://github.com/SaraSoueidan.png?s=75\" width=\"75\" height=\"75\"><br />\nSara Soueidan\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/yeonjuan\">\n<img src=\"https://github.com/yeonjuan.png?s=75\" width=\"75\" height=\"75\"><br />\nYeonJuan\n</a>\n</td></tr></tbody></table>\n\n### Website Team\n\nTeam members who focus specifically on eslint.org\n\n<table><tbody><tr><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/amareshsm\">\n<img src=\"https://github.com/amareshsm.png?s=75\" width=\"75\" height=\"75\"><br />\nAmaresh  S M\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/harish-sethuraman\">\n<img src=\"https://github.com/harish-sethuraman.png?s=75\" width=\"75\" height=\"75\"><br />\nStrek\n</a>\n</td><td align=\"center\" valign=\"top\" width=\"11%\">\n<a href=\"https://github.com/kecrily\">\n<img src=\"https://github.com/kecrily.png?s=75\" width=\"75\" height=\"75\"><br />\nPercy Ma\n</a>\n</td></tr></tbody></table>\n\n<!--teamend-->\n\n## Sponsors\n\nThe following companies, organizations, and individuals support ESLint's ongoing maintenance and development. [Become a Sponsor](https://opencollective.com/eslint) to get your logo on our README and website.\n\n<!-- NOTE: This section is autogenerated. Do not manually edit.-->\n<!--sponsorsstart-->\n<h3>Platinum Sponsors</h3>\n<p><a href=\"#\"><img src=\"https://images.opencollective.com/2021-frameworks-fund/logo.png\" alt=\"Chrome Frameworks Fund\" height=\"undefined\"></a> <a href=\"https://automattic.com\"><img src=\"https://images.opencollective.com/automattic/d0ef3e1/logo.png\" alt=\"Automattic\" height=\"undefined\"></a></p><h3>Gold Sponsors</h3>\n<p><a href=\"https://ridicorp.com/career/\"><img src=\"https://images.opencollective.com/ridi-corporation/175dcf3/logo.png\" alt=\"RIDI\" height=\"96\"></a> <a href=\"https://engineering.salesforce.com\"><img src=\"https://images.opencollective.com/salesforce/ca8f997/logo.png\" alt=\"Salesforce\" height=\"96\"></a> <a href=\"https://www.airbnb.com/\"><img src=\"https://images.opencollective.com/airbnb/d327d66/logo.png\" alt=\"Airbnb\" height=\"96\"></a></p><h3>Silver Sponsors</h3>\n<p><a href=\"https://sentry.io\"><img src=\"https://avatars.githubusercontent.com/u/1396951?v=4\" alt=\"Sentry\" height=\"64\"></a> <a href=\"https://liftoff.io/\"><img src=\"https://images.opencollective.com/liftoff/5c4fa84/logo.png\" alt=\"Liftoff\" height=\"64\"></a></p><h3>Bronze Sponsors</h3>\n<p><a href=\"https://themeisle.com\"><img src=\"https://images.opencollective.com/themeisle/d5592fe/logo.png\" alt=\"ThemeIsle\" height=\"32\"></a> <a href=\"https://nx.dev\"><img src=\"https://images.opencollective.com/nx/0efbe42/logo.png\" alt=\"Nx (by Nrwl)\" height=\"32\"></a> <a href=\"https://www.crosswordsolver.org/anagram-solver/\"><img src=\"https://images.opencollective.com/anagram-solver/2666271/logo.png\" alt=\"Anagram Solver\" height=\"32\"></a> <a href=\"https://icons8.com\"><img src=\"https://images.opencollective.com/icons8/7fa1641/logo.png\" alt=\"Icons8: free icons, photos, illustrations, and music\" height=\"32\"></a> <a href=\"https://discord.com\"><img src=\"https://images.opencollective.com/discordapp/f9645d9/logo.png\" alt=\"Discord\" height=\"32\"></a> <a href=\"https://www.ignitionapp.com\"><img src=\"https://avatars.githubusercontent.com/u/5753491?v=4\" alt=\"Ignition\" height=\"32\"></a> <a href=\"https://herocoders.com\"><img src=\"https://avatars.githubusercontent.com/u/37549774?v=4\" alt=\"HeroCoders\" height=\"32\"></a> <a href=\"https://quickbookstoolhub.com\"><img src=\"https://avatars.githubusercontent.com/u/95090305?u=e5bc398ef775c9ed19f955c675cdc1fb6abf01df&v=4\" alt=\"QuickBooks Tool hub\" height=\"32\"></a></p>\n<!--sponsorsend-->\n\n## Technology Sponsors\n\n* Site search ([eslint.org](https://eslint.org)) is sponsored by [Algolia](https://www.algolia.com)\n* Hosting for ([eslint.org](https://eslint.org)) is sponsored by [Netlify](https://www.netlify.com)\n* Password management is sponsored by [1Password](https://www.1password.com)"
+      },
+      "npm": {
+        "downloads": [
+          {
+            "from": "2023-01-14T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 1351869
+          },
+          {
+            "from": "2023-01-08T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 29717140
+          },
+          {
+            "from": "2022-12-16T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 100301313
+          },
+          {
+            "from": "2022-10-17T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 354118517
+          },
+          {
+            "from": "2022-07-19T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 691886005
+          },
+          {
+            "from": "2022-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 1328714808
+          }
+        ],
+        "starsCount": 336
+      },
+      "github": {
+        "homepage": "https://eslint.org",
+        "starsCount": 22026,
+        "forksCount": 4019,
+        "subscribersCount": 318,
+        "issues": {
+          "count": 16007,
+          "openCount": 139,
+          "distribution": {
+            "3600": 1734,
+            "10800": 1134,
+            "32400": 1405,
+            "97200": 2091,
+            "291600": 2281,
+            "874800": 2102,
+            "2624400": 1696,
+            "7873200": 1936,
+            "23619600": 1160,
+            "70858800": 419,
+            "212576400": 49
+          },
+          "isDisabled": false
+        },
+        "contributors": [
+          {
+            "username": "nzakas",
+            "commitsCount": 872
+          },
+          {
+            "username": "mdjermanovic",
+            "commitsCount": 526
+          },
+          {
+            "username": "not-an-aardvark",
+            "commitsCount": 512
+          },
+          {
+            "username": "mysticatea",
+            "commitsCount": 337
+          },
+          {
+            "username": "alberto",
+            "commitsCount": 231
+          },
+          {
+            "username": "btmills",
+            "commitsCount": 193
+          },
+          {
+            "username": "gyandeeps",
+            "commitsCount": 182
+          },
+          {
+            "username": "aladdin-add",
+            "commitsCount": 169
+          },
+          {
+            "username": "kaicataldo",
+            "commitsCount": 153
+          },
+          {
+            "username": "ilyavolodin",
+            "commitsCount": 149
+          },
+          {
+            "username": "platinumazure",
+            "commitsCount": 138
+          },
+          {
+            "username": "michaelficarra",
+            "commitsCount": 112
+          },
+          {
+            "username": "BYK",
+            "commitsCount": 82
+          },
+          {
+            "username": "snitin315",
+            "commitsCount": 74
+          },
+          {
+            "username": "iancmyers",
+            "commitsCount": 71
+          },
+          {
+            "username": "lo1tuma",
+            "commitsCount": 69
+          },
+          {
+            "username": "yeonjuan",
+            "commitsCount": 47
+          },
+          {
+            "username": "g-plane",
+            "commitsCount": 45
+          },
+          {
+            "username": "mduvall",
+            "commitsCount": 42
+          },
+          {
+            "username": "vitorbal",
+            "commitsCount": 37
+          },
+          {
+            "username": "pedrottimark",
+            "commitsCount": 34
+          },
+          {
+            "username": "bmish",
+            "commitsCount": 34
+          },
+          {
+            "username": "anikethsaha",
+            "commitsCount": 31
+          },
+          {
+            "username": "amareshsm",
+            "commitsCount": 27
+          },
+          {
+            "username": "roadhump",
+            "commitsCount": 24
+          },
+          {
+            "username": "DavidAnson",
+            "commitsCount": 24
+          },
+          {
+            "username": "jonvuri",
+            "commitsCount": 23
+          },
+          {
+            "username": "IanVS",
+            "commitsCount": 22
+          },
+          {
+            "username": "nschonni",
+            "commitsCount": 21
+          },
+          {
+            "username": "chenxsan",
+            "commitsCount": 20
+          },
+          {
+            "username": "gcochard",
+            "commitsCount": 19
+          },
+          {
+            "username": "harish-sethuraman",
+            "commitsCount": 19
+          },
+          {
+            "username": "VictorHom",
+            "commitsCount": 18
+          },
+          {
+            "username": "ljharb",
+            "commitsCount": 18
+          },
+          {
+            "username": "jrpool",
+            "commitsCount": 17
+          },
+          {
+            "username": "scriptdaemon",
+            "commitsCount": 16
+          },
+          {
+            "username": "bpmutter",
+            "commitsCount": 16
+          },
+          {
+            "username": "jrvidal",
+            "commitsCount": 15
+          },
+          {
+            "username": "golopot",
+            "commitsCount": 15
+          },
+          {
+            "username": "brettz9",
+            "commitsCount": 12
+          },
+          {
+            "username": "j-f1",
+            "commitsCount": 11
+          },
+          {
+            "username": "bradzacher",
+            "commitsCount": 11
+          },
+          {
+            "username": "fasttime",
+            "commitsCount": 11
+          },
+          {
+            "username": "goatslacker",
+            "commitsCount": 10
+          },
+          {
+            "username": "captainbrosset",
+            "commitsCount": 10
+          },
+          {
+            "username": "makepanic",
+            "commitsCount": 10
+          },
+          {
+            "username": "mgol",
+            "commitsCount": 10
+          },
+          {
+            "username": "sstern6",
+            "commitsCount": 10
+          },
+          {
+            "username": "mamacdon",
+            "commitsCount": 9
+          },
+          {
+            "username": "albertosantini",
+            "commitsCount": 9
+          },
+          {
+            "username": "xjamundx",
+            "commitsCount": 9
+          },
+          {
+            "username": "tschaub",
+            "commitsCount": 9
+          },
+          {
+            "username": "captbaritone",
+            "commitsCount": 9
+          },
+          {
+            "username": "kecrily",
+            "commitsCount": 9
+          },
+          {
+            "username": "knunery",
+            "commitsCount": 8
+          },
+          {
+            "username": "vegetableman",
+            "commitsCount": 8
+          },
+          {
+            "username": "soda0289",
+            "commitsCount": 8
+          },
+          {
+            "username": "madbence",
+            "commitsCount": 8
+          },
+          {
+            "username": "sosukesuzuki",
+            "commitsCount": 8
+          },
+          {
+            "username": "spmurrayzzz",
+            "commitsCount": 7
+          },
+          {
+            "username": "andrewdeandrade",
+            "commitsCount": 7
+          },
+          {
+            "username": "jonathanKingston",
+            "commitsCount": 7
+          },
+          {
+            "username": "gkz",
+            "commitsCount": 7
+          },
+          {
+            "username": "spadgos",
+            "commitsCount": 7
+          },
+          {
+            "username": "vsemozhetbyt",
+            "commitsCount": 7
+          },
+          {
+            "username": "Krinkle",
+            "commitsCount": 7
+          },
+          {
+            "username": "Trott",
+            "commitsCount": 7
+          },
+          {
+            "username": "jrfeenst",
+            "commitsCount": 6
+          },
+          {
+            "username": "pdehaan",
+            "commitsCount": 6
+          },
+          {
+            "username": "briandipalma",
+            "commitsCount": 6
+          },
+          {
+            "username": "sindresorhus",
+            "commitsCount": 6
+          },
+          {
+            "username": "dguo",
+            "commitsCount": 6
+          },
+          {
+            "username": "aparajita",
+            "commitsCount": 6
+          },
+          {
+            "username": "rajenp",
+            "commitsCount": 6
+          },
+          {
+            "username": "alefteris",
+            "commitsCount": 6
+          },
+          {
+            "username": "glenjamin",
+            "commitsCount": 6
+          },
+          {
+            "username": "hzoo",
+            "commitsCount": 6
+          },
+          {
+            "username": "annie",
+            "commitsCount": 6
+          },
+          {
+            "username": "TheSavior",
+            "commitsCount": 6
+          },
+          {
+            "username": "PoziWorld",
+            "commitsCount": 6
+          },
+          {
+            "username": "revolter",
+            "commitsCount": 6
+          },
+          {
+            "username": "realityking",
+            "commitsCount": 6
+          },
+          {
+            "username": "ota-meshi",
+            "commitsCount": 6
+          },
+          {
+            "username": "MichaelPaulukonis",
+            "commitsCount": 5
+          },
+          {
+            "username": "Delapouite",
+            "commitsCount": 5
+          },
+          {
+            "username": "ilovejary",
+            "commitsCount": 5
+          },
+          {
+            "username": "NateEag",
+            "commitsCount": 5
+          },
+          {
+            "username": "whitneyit",
+            "commitsCount": 5
+          },
+          {
+            "username": "mathieumg",
+            "commitsCount": 5
+          },
+          {
+            "username": "nre",
+            "commitsCount": 5
+          },
+          {
+            "username": "onurtemizkan",
+            "commitsCount": 5
+          },
+          {
+            "username": "aubergine10",
+            "commitsCount": 5
+          },
+          {
+            "username": "valorkin",
+            "commitsCount": 5
+          },
+          {
+            "username": "meeber",
+            "commitsCount": 5
+          },
+          {
+            "username": "tikotzky",
+            "commitsCount": 5
+          },
+          {
+            "username": "Mardak",
+            "commitsCount": 5
+          },
+          {
+            "username": "malcolmsgroves",
+            "commitsCount": 5
+          },
+          {
+            "username": "mjomble",
+            "commitsCount": 5
+          },
+          {
+            "username": "cjihrig",
+            "commitsCount": 5
+          },
+          {
+            "username": "molee1905",
+            "commitsCount": 5
+          }
+        ],
+        "commits": [
+          {
+            "from": "2023-01-08T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 8
+          },
+          {
+            "from": "2022-12-16T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 37
+          },
+          {
+            "from": "2022-10-17T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 121
+          },
+          {
+            "from": "2022-07-19T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 219
+          },
+          {
+            "from": "2022-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 445
+          }
+        ]
+      },
+      "source": {
+        "files": {
+          "readmeSize": 17892,
+          "testsSize": 10987800,
+          "hasChangelog": true
+        },
+        "badges": [
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/eslint.svg",
+              "shields": "https://img.shields.io/npm/v/eslint.svg",
+              "content": "https://img.shields.io/npm/v/eslint.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          },
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/dm/eslint.svg",
+              "shields": "https://img.shields.io/npm/dm/eslint.svg",
+              "content": "https://img.shields.io/npm/dm/eslint.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "downloads",
+              "modifiers": {
+                "type": "dm"
+              }
+            }
+          }
+        ],
+        "linters": [
+          "editorconfig",
+          "eslint"
+        ],
+        "coverage": 0.69,
+        "outdatedDependencies": {
+          "is-path-inside": {
+            "required": "^3.0.3",
+            "stable": "4.0.0",
+            "latest": "4.0.0"
+          },
+          "strip-ansi": {
+            "required": "^6.0.1",
+            "stable": "7.0.1",
+            "latest": "6.0.1"
+          },
+          "escape-string-regexp": {
+            "required": "^4.0.0",
+            "stable": "5.0.0",
+            "latest": "5.0.0"
+          },
+          "find-up": {
+            "required": "^5.0.0",
+            "stable": "6.3.0",
+            "latest": "6.3.0"
+          },
+          "strip-json-comments": {
+            "required": "^3.1.0",
+            "stable": "5.0.0",
+            "latest": "5.0.0"
+          },
+          "chalk": {
+            "required": "^4.0.0",
+            "stable": "5.2.0",
+            "latest": "5.2.0"
+          },
+          "minimatch": {
+            "required": "^3.1.2",
+            "stable": "6.0.0",
+            "latest": "6.0.0"
+          },
+          "ajv": {
+            "required": "^6.10.0",
+            "stable": "8.12.0",
+            "latest": "8.12.0"
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "quality": {
+        "carefulness": 0.9999999999999999,
+        "tests": 0.7035,
+        "health": 0.5897435897435898,
+        "branding": 0.7
+      },
+      "popularity": {
+        "communityInterest": 26799,
+        "downloadsCount": 118039505.66666667,
+        "downloadsAcceleration": -23360.211510654422,
+        "dependentsCount": 0
+      },
+      "maintenance": {
+        "releasesFrequency": 1,
+        "commitsFrequency": 1,
+        "openIssues": 1,
+        "issuesDistribution": 0.7906257936868529
+      }
+    },
+    "score": {
+      "final": 0.9389451163490978,
+      "detail": {
+        "quality": 0.9260334600373896,
+        "popularity": 0.8893484930881154,
+        "maintenance": 0.9996088735915443
+      }
+    }
+  },
+  "prettier": {
+    "analyzedAt": "2023-01-15T01:18:37.799Z",
+    "collected": {
+      "metadata": {
+        "name": "prettier",
+        "scope": "unscoped",
+        "version": "2.8.3",
+        "description": "Prettier is an opinionated code formatter",
+        "date": "2023-01-14T03:38:48.087Z",
+        "author": {
+          "name": "James Long"
+        },
+        "publisher": {
+          "username": "prettier-bot",
+          "email": "prettier-bot@d0d0.com"
+        },
+        "maintainers": [
+          {
+            "username": "jlongster",
+            "email": "longster@gmail.com"
+          },
+          {
+            "username": "lydell",
+            "email": "simon.lydell@gmail.com"
+          },
+          {
+            "username": "thorn0",
+            "email": "georgii.dolzhykov@gmail.com"
+          },
+          {
+            "username": "vjeux",
+            "email": "vjeuxx@gmail.com"
+          },
+          {
+            "username": "fisker",
+            "email": "lionkay@gmail.com"
+          },
+          {
+            "username": "suchipi",
+            "email": "me@suchipi.com"
+          },
+          {
+            "username": "duailibe",
+            "email": "lucasds@gmail.com"
+          },
+          {
+            "username": "ikatyang",
+            "email": "ikatyang@gmail.com"
+          },
+          {
+            "username": "azz",
+            "email": "lucas@azzola.dev"
+          },
+          {
+            "username": "sosukesuzuki",
+            "email": "aosukeke@gmail.com"
+          },
+          {
+            "username": "prettier-bot",
+            "email": "prettier-bot@d0d0.com"
+          }
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/prettier/prettier.git"
+        },
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier",
+          "homepage": "https://prettier.io",
+          "repository": "https://github.com/prettier/prettier",
+          "bugs": "https://github.com/prettier/prettier/issues"
+        },
+        "license": "MIT",
+        "dependencies": {
+          "@angular/compiler": "12.2.16",
+          "@babel/code-frame": "7.18.6",
+          "@babel/parser": "7.20.7",
+          "@glimmer/syntax": "0.84.2",
+          "@iarna/toml": "2.2.5",
+          "@typescript-eslint/typescript-estree": "5.45.0",
+          "acorn": "8.8.1",
+          "acorn-jsx": "5.3.2",
+          "angular-estree-parser": "2.5.1",
+          "angular-html-parser": "1.8.0",
+          "camelcase": "6.3.0",
+          "chalk": "5.0.1",
+          "ci-info": "3.3.0",
+          "cjk-regex": "2.0.1",
+          "collapse-white-space": "1.0.6",
+          "cosmiconfig": "7.0.1",
+          "css-units-list": "1.1.0",
+          "dashify": "2.0.0",
+          "diff": "5.0.0",
+          "editorconfig": "0.15.3",
+          "editorconfig-to-prettier": "0.2.0",
+          "escape-string-regexp": "5.0.0",
+          "espree": "9.4.1",
+          "esutils": "2.0.3",
+          "fast-glob": "3.2.12",
+          "fast-json-stable-stringify": "2.1.0",
+          "file-entry-cache": "6.0.1",
+          "find-cache-dir": "3.3.2",
+          "find-parent-dir": "0.3.1",
+          "flow-parser": "0.180.0",
+          "get-stdin": "8.0.0",
+          "graphql": "15.6.1",
+          "html-element-attributes": "3.1.0",
+          "html-styles": "1.0.0",
+          "html-tag-names": "2.0.1",
+          "html-void-elements": "2.0.1",
+          "ignore": "5.2.0",
+          "jest-docblock": "28.1.1",
+          "json5": "2.2.2",
+          "leven": "4.0.0",
+          "lines-and-columns": "2.0.3",
+          "linguist-languages": "7.21.0",
+          "mem": "9.0.2",
+          "meriyah": "4.2.1",
+          "micromatch": "4.0.5",
+          "minimist": "1.2.6",
+          "n-readlines": "1.0.1",
+          "outdent": "0.8.0",
+          "parse-srcset": "github:ikatyang/parse-srcset#54eb9c1cb21db5c62b4d0e275d7249516df6f0ee",
+          "please-upgrade-node": "3.2.0",
+          "postcss-less": "3.1.4",
+          "postcss-media-query-parser": "0.2.3",
+          "postcss-scss": "2.1.1",
+          "postcss-selector-parser": "2.2.3",
+          "postcss-values-parser": "2.0.1",
+          "regexp-util": "1.2.2",
+          "remark-footnotes": "2.0.0",
+          "remark-math": "3.0.1",
+          "remark-parse": "8.0.3",
+          "resolve": "1.22.1",
+          "sdbm": "2.0.0",
+          "semver": "7.3.7",
+          "string-width": "5.0.1",
+          "strip-ansi": "7.0.1",
+          "typescript": "4.9.3",
+          "unicode-regex": "3.0.0",
+          "unified": "9.2.1",
+          "vnopts": "1.0.2",
+          "wcwidth": "1.0.1",
+          "yaml-unist-parser": "1.3.1"
+        },
+        "devDependencies": {
+          "@babel/core": "7.20.7",
+          "@babel/preset-env": "7.20.2",
+          "@babel/types": "7.20.7",
+          "@esbuild-plugins/node-modules-polyfill": "0.1.4",
+          "@glimmer/reference": "0.84.2",
+          "@types/estree": "0.0.51",
+          "@types/file-entry-cache": "5.0.2",
+          "@types/find-cache-dir": "3.2.1",
+          "@types/jest": "27.4.1",
+          "@typescript-eslint/eslint-plugin": "5.36.2",
+          "babel-jest": "27.5.1",
+          "benchmark": "2.1.4",
+          "browserslist-to-esbuild": "1.2.0",
+          "core-js": "3.26.1",
+          "cross-env": "7.0.3",
+          "cspell": "5.19.7",
+          "enquirer": "2.3.6",
+          "esbuild": "0.16.10",
+          "esbuild-visualizer": "0.4.0",
+          "eslint": "8.30.0",
+          "eslint-config-prettier": "8.5.0",
+          "eslint-formatter-friendly": "7.0.0",
+          "eslint-plugin-compat": "4.0.2",
+          "eslint-plugin-import": "2.26.0",
+          "eslint-plugin-jest": "26.1.5",
+          "eslint-plugin-prettier-internal-rules": "2.0.1",
+          "eslint-plugin-react": "7.29.4",
+          "eslint-plugin-regexp": "1.7.0",
+          "eslint-plugin-unicorn": "43.0.0",
+          "esm-utils": "3.0.0",
+          "execa": "6.1.0",
+          "jest": "27.5.1",
+          "jest-snapshot-serializer-ansi": "1.0.0",
+          "jest-snapshot-serializer-raw": "1.2.0",
+          "jest-watch-typeahead": "1.0.0",
+          "magic-string": "0.27.0",
+          "node-actionlint": "1.2.2",
+          "node-fetch": "3.2.10",
+          "npm-run-all": "4.1.5",
+          "path-browserify": "1.0.1",
+          "prettier": "2.8.3",
+          "pretty-bytes": "6.0.0",
+          "rimraf": "3.0.2",
+          "rollup-plugin-license": "2.7.0",
+          "snapshot-diff": "0.9.0",
+          "tempy": "2.0.0"
+        },
+        "releases": [
+          {
+            "from": "2022-12-16T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 3
+          },
+          {
+            "from": "2022-10-17T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 7
+          },
+          {
+            "from": "2022-07-19T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 10
+          },
+          {
+            "from": "2022-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 15
+          },
+          {
+            "from": "2021-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 22
+          }
+        ],
+        "hasTestScript": true,
+        "hasSelectiveFiles": true,
+        "readme": "![Prettier Banner](https://unpkg.com/prettier-logo@1.0.3/images/prettier-banner-light.svg)\n\n<h2 align=\"center\">Opinionated Code Formatter</h2>\n\n<p align=\"center\">\n  <em>\n    JavaScript\n    · TypeScript\n    · Flow\n    · JSX\n    · JSON\n  </em>\n  <br />\n  <em>\n    CSS\n    · SCSS\n    · Less\n  </em>\n  <br />\n  <em>\n    HTML\n    · Vue\n    · Angular\n  </em>\n  <br />\n  <em>\n    GraphQL\n    · Markdown\n    · YAML\n  </em>\n  <br />\n  <em>\n    <a href=\"https://prettier.io/docs/en/plugins.html\">\n      Your favorite language?\n    </a>\n  </em>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/prettier/prettier/actions?query=workflow%3AProd+branch%3Amain\">\n    <img alt=\"Github Actions Build Status\" src=\"https://img.shields.io/github/actions/workflow/status/prettier/prettier/prod-test.yml?label=Prod&style=flat-square\"></a>\n  <a href=\"https://github.com/prettier/prettier/actions?query=workflow%3ADev+branch%3Amain\">\n    <img alt=\"Github Actions Build Status\" src=\"https://img.shields.io/github/actions/workflow/status/prettier/prettier/dev-test.yml?label=Dev&style=flat-square\"></a>\n  <a href=\"https://github.com/prettier/prettier/actions?query=workflow%3ALint+branch%3Amain\">\n    <img alt=\"Github Actions Build Status\" src=\"https://img.shields.io/github/actions/workflow/status/prettier/prettier/lint.yml?label=Lint&style=flat-square\"></a>\n  <a href=\"https://codecov.io/gh/prettier/prettier\">\n    <img alt=\"Codecov Coverage Status\" src=\"https://img.shields.io/codecov/c/github/prettier/prettier.svg?style=flat-square\"></a>\n  <a href=\"https://twitter.com/acdlite/status/974390255393505280\">\n    <img alt=\"Blazing Fast\" src=\"https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg?style=flat-square\"></a>\n  <br/>\n  <a href=\"https://www.npmjs.com/package/prettier\">\n    <img alt=\"npm version\" src=\"https://img.shields.io/npm/v/prettier.svg?style=flat-square\"></a>\n  <a href=\"https://www.npmjs.com/package/prettier\">\n    <img alt=\"weekly downloads from npm\" src=\"https://img.shields.io/npm/dw/prettier.svg?style=flat-square\"></a>\n  <a href=\"#badge\">\n    <img alt=\"code style: prettier\" src=\"https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square\"></a>\n  <a href=\"https://twitter.com/PrettierCode\">\n    <img alt=\"Follow Prettier on Twitter\" src=\"https://img.shields.io/twitter/follow/prettiercode.svg?label=follow+prettier&style=flat-square\"></a>\n</p>\n\n## Intro\n\nPrettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.\n\n### Input\n\n<!-- prettier-ignore -->\n```js\nfoo(reallyLongArg(), omgSoManyParameters(), IShouldRefactorThis(), isThereSeriouslyAnotherOne());\n```\n\n### Output\n\n```js\nfoo(\n  reallyLongArg(),\n  omgSoManyParameters(),\n  IShouldRefactorThis(),\n  isThereSeriouslyAnotherOne()\n);\n```\n\nPrettier can be run [in your editor](https://prettier.io/docs/en/editors.html) on-save, in a [pre-commit hook](https://prettier.io/docs/en/precommit.html), or in [CI environments](https://prettier.io/docs/en/cli.html#list-different) to ensure your codebase has a consistent style without devs ever having to post a nit-picky comment on a code review ever again!\n\n---\n\n**[Documentation](https://prettier.io/docs/en/)**\n\n<!-- prettier-ignore -->\n[Install](https://prettier.io/docs/en/install.html) ·\n[Options](https://prettier.io/docs/en/options.html) ·\n[CLI](https://prettier.io/docs/en/cli.html) ·\n[API](https://prettier.io/docs/en/api.html)\n\n**[Playground](https://prettier.io/playground/)**\n\n---\n\n## Badge\n\nShow the world you're using _Prettier_ → [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n\n```md\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n```\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md)."
+      },
+      "npm": {
+        "downloads": [
+          {
+            "from": "2023-01-14T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 0
+          },
+          {
+            "from": "2023-01-08T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 26434871
+          },
+          {
+            "from": "2022-12-16T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 89760459
+          },
+          {
+            "from": "2022-10-17T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 319903789
+          },
+          {
+            "from": "2022-07-19T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 626790167
+          },
+          {
+            "from": "2022-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 1285263768
+          }
+        ],
+        "starsCount": 67
+      },
+      "github": {
+        "homepage": "https://prettier.io",
+        "starsCount": 44622,
+        "forksCount": 3690,
+        "subscribersCount": 417,
+        "issues": {
+          "count": 13988,
+          "openCount": 1134,
+          "distribution": {
+            "3600": 2203,
+            "10800": 1636,
+            "32400": 1761,
+            "97200": 2121,
+            "291600": 1692,
+            "874800": 1158,
+            "2624400": 919,
+            "7873200": 599,
+            "23619600": 515,
+            "70858800": 681,
+            "212576400": 703
+          },
+          "isDisabled": false
+        },
+        "contributors": [
+          {
+            "username": "dependabot[bot]",
+            "commitsCount": 1489
+          },
+          {
+            "username": "fisker",
+            "commitsCount": 1167
+          },
+          {
+            "username": "vjeux",
+            "commitsCount": 571
+          },
+          {
+            "username": "ikatyang",
+            "commitsCount": 430
+          },
+          {
+            "username": "sosukesuzuki",
+            "commitsCount": 424
+          },
+          {
+            "username": "dependabot-preview[bot]",
+            "commitsCount": 417
+          },
+          {
+            "username": "thorn0",
+            "commitsCount": 366
+          },
+          {
+            "username": "duailibe",
+            "commitsCount": 294
+          },
+          {
+            "username": "azz",
+            "commitsCount": 243
+          },
+          {
+            "username": "lydell",
+            "commitsCount": 157
+          },
+          {
+            "username": "jlongster",
+            "commitsCount": 129
+          },
+          {
+            "username": "josephfrazier",
+            "commitsCount": 93
+          },
+          {
+            "username": "existentialism",
+            "commitsCount": 80
+          },
+          {
+            "username": "j-f1",
+            "commitsCount": 61
+          },
+          {
+            "username": "lipis",
+            "commitsCount": 47
+          },
+          {
+            "username": "dcyriller",
+            "commitsCount": 37
+          },
+          {
+            "username": "suchipi",
+            "commitsCount": 35
+          },
+          {
+            "username": "yamafaktory",
+            "commitsCount": 34
+          },
+          {
+            "username": "despairblue",
+            "commitsCount": 27
+          },
+          {
+            "username": "bakkot",
+            "commitsCount": 25
+          },
+          {
+            "username": "rattrayalex",
+            "commitsCount": 24
+          },
+          {
+            "username": "kachkaev",
+            "commitsCount": 23
+          },
+          {
+            "username": "JamesHenry",
+            "commitsCount": 22
+          },
+          {
+            "username": "karl",
+            "commitsCount": 19
+          },
+          {
+            "username": "SimenB",
+            "commitsCount": 15
+          },
+          {
+            "username": "brodybits",
+            "commitsCount": 13
+          },
+          {
+            "username": "mitermayer",
+            "commitsCount": 12
+          },
+          {
+            "username": "bnjmnt4n",
+            "commitsCount": 11
+          },
+          {
+            "username": "stubailo",
+            "commitsCount": 9
+          },
+          {
+            "username": "JounQin",
+            "commitsCount": 9
+          },
+          {
+            "username": "rogeliog",
+            "commitsCount": 8
+          },
+          {
+            "username": "okonet",
+            "commitsCount": 8
+          },
+          {
+            "username": "gkz",
+            "commitsCount": 8
+          },
+          {
+            "username": "hzoo",
+            "commitsCount": 7
+          },
+          {
+            "username": "ad1992",
+            "commitsCount": 7
+          },
+          {
+            "username": "sasurau4",
+            "commitsCount": 7
+          },
+          {
+            "username": "knowbody",
+            "commitsCount": 6
+          },
+          {
+            "username": "thymikee",
+            "commitsCount": 6
+          },
+          {
+            "username": "tchak",
+            "commitsCount": 6
+          },
+          {
+            "username": "avocadowastaken",
+            "commitsCount": 5
+          },
+          {
+            "username": "jackyho112",
+            "commitsCount": 5
+          },
+          {
+            "username": "asottile",
+            "commitsCount": 5
+          },
+          {
+            "username": "yangsu",
+            "commitsCount": 5
+          },
+          {
+            "username": "GavinJoyce",
+            "commitsCount": 5
+          },
+          {
+            "username": "Cryrivers",
+            "commitsCount": 5
+          },
+          {
+            "username": "karlhorky",
+            "commitsCount": 5
+          },
+          {
+            "username": "Shinigami92",
+            "commitsCount": 5
+          },
+          {
+            "username": "boyenn",
+            "commitsCount": 5
+          },
+          {
+            "username": "ntotten",
+            "commitsCount": 5
+          },
+          {
+            "username": "Harry-Hopkinson",
+            "commitsCount": 5
+          },
+          {
+            "username": "HosokawaR",
+            "commitsCount": 5
+          },
+          {
+            "username": "rcoedo",
+            "commitsCount": 4
+          },
+          {
+            "username": "czosel",
+            "commitsCount": 4
+          },
+          {
+            "username": "taion",
+            "commitsCount": 4
+          },
+          {
+            "username": "sompylasar",
+            "commitsCount": 4
+          },
+          {
+            "username": "warrenseine",
+            "commitsCount": 4
+          },
+          {
+            "username": "voithos",
+            "commitsCount": 4
+          },
+          {
+            "username": "jridgewell",
+            "commitsCount": 4
+          },
+          {
+            "username": "prigara",
+            "commitsCount": 4
+          },
+          {
+            "username": "brainkim",
+            "commitsCount": 4
+          },
+          {
+            "username": "kddnewton",
+            "commitsCount": 4
+          },
+          {
+            "username": "michaelficarra",
+            "commitsCount": 3
+          },
+          {
+            "username": "amasad",
+            "commitsCount": 3
+          },
+          {
+            "username": "danharper",
+            "commitsCount": 3
+          },
+          {
+            "username": "rhengles",
+            "commitsCount": 3
+          },
+          {
+            "username": "tgriesser",
+            "commitsCount": 3
+          },
+          {
+            "username": "darahak",
+            "commitsCount": 3
+          },
+          {
+            "username": "CiGit",
+            "commitsCount": 3
+          },
+          {
+            "username": "danez",
+            "commitsCount": 3
+          },
+          {
+            "username": "Haroenv",
+            "commitsCount": 3
+          },
+          {
+            "username": "johann-sonntagbauer",
+            "commitsCount": 3
+          },
+          {
+            "username": "onurtemizkan",
+            "commitsCount": 3
+          },
+          {
+            "username": "bd82",
+            "commitsCount": 3
+          },
+          {
+            "username": "BPScott",
+            "commitsCount": 3
+          },
+          {
+            "username": "mattleff",
+            "commitsCount": 3
+          },
+          {
+            "username": "ericsakmar",
+            "commitsCount": 3
+          },
+          {
+            "username": "cola119",
+            "commitsCount": 3
+          },
+          {
+            "username": "shisama",
+            "commitsCount": 3
+          },
+          {
+            "username": "coliff",
+            "commitsCount": 3
+          },
+          {
+            "username": "dangmai",
+            "commitsCount": 3
+          },
+          {
+            "username": "adalinesimonian",
+            "commitsCount": 3
+          },
+          {
+            "username": "wafuwafu13",
+            "commitsCount": 3
+          },
+          {
+            "username": "joshunger",
+            "commitsCount": 3
+          },
+          {
+            "username": "imgbot[bot]",
+            "commitsCount": 3
+          },
+          {
+            "username": "bennycode",
+            "commitsCount": 3
+          },
+          {
+            "username": "niklasvatn",
+            "commitsCount": 3
+          },
+          {
+            "username": "JLHwung",
+            "commitsCount": 3
+          },
+          {
+            "username": "NaridaL",
+            "commitsCount": 3
+          },
+          {
+            "username": "andersk",
+            "commitsCount": 3
+          },
+          {
+            "username": "mvorisek",
+            "commitsCount": 3
+          },
+          {
+            "username": "dinoboff",
+            "commitsCount": 2
+          },
+          {
+            "username": "tjefferson08",
+            "commitsCount": 2
+          },
+          {
+            "username": "joefiorini",
+            "commitsCount": 2
+          },
+          {
+            "username": "ChristianHersevoort",
+            "commitsCount": 2
+          },
+          {
+            "username": "ericclemmons",
+            "commitsCount": 2
+          },
+          {
+            "username": "jasonLaster",
+            "commitsCount": 2
+          },
+          {
+            "username": "llimllib",
+            "commitsCount": 2
+          },
+          {
+            "username": "hawkrives",
+            "commitsCount": 2
+          },
+          {
+            "username": "pcardune",
+            "commitsCount": 2
+          },
+          {
+            "username": "BHSPitMonkey",
+            "commitsCount": 2
+          }
+        ],
+        "commits": [
+          {
+            "from": "2023-01-08T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 10
+          },
+          {
+            "from": "2022-12-16T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 43
+          },
+          {
+            "from": "2022-10-17T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 83
+          },
+          {
+            "from": "2022-07-19T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 114
+          },
+          {
+            "from": "2022-01-15T00:00:00.000Z",
+            "to": "2023-01-15T00:00:00.000Z",
+            "count": 599
+          }
+        ]
+      },
+      "source": {
+        "files": {
+          "readmeSize": 4007,
+          "testsSize": 10427453,
+          "hasChangelog": true
+        },
+        "badges": [
+          {
+            "urls": {
+              "original": "https://img.shields.io/codecov/c/github/prettier/prettier.svg?style=flat-square",
+              "service": "https://codecov.io/github/prettier/prettier/graphs/badge.svg",
+              "shields": "https://img.shields.io/codecov/c/github/prettier/prettier.svg",
+              "content": "https://img.shields.io/codecov/c/github/prettier/prettier.json"
+            },
+            "info": {
+              "service": "codecov",
+              "type": "coverage"
+            }
+          },
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/prettier.svg?style=flat-square",
+              "shields": "https://img.shields.io/npm/v/prettier.svg",
+              "content": "https://img.shields.io/npm/v/prettier.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          },
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/dw/prettier.svg?style=flat-square",
+              "shields": "https://img.shields.io/npm/dw/prettier.svg",
+              "content": "https://img.shields.io/npm/dw/prettier.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "downloads",
+              "modifiers": {
+                "type": "dw"
+              }
+            }
+          }
+        ],
+        "linters": [
+          "editorconfig",
+          "eslint",
+          "prettier"
+        ],
+        "coverage": 0.99,
+        "outdatedDependencies": {
+          "angular-estree-parser": {
+            "required": "2.5.1",
+            "stable": "5.0.1",
+            "latest": "5.0.1"
+          },
+          "parse-srcset": {
+            "required": "github:ikatyang/parse-srcset#54eb9c1cb21db5c62b4d0e275d7249516df6f0ee",
+            "stable": "1.0.2",
+            "latest": "1.0.2"
+          },
+          "find-cache-dir": {
+            "required": "3.3.2",
+            "stable": "4.0.0",
+            "latest": "4.0.0"
+          },
+          "get-stdin": {
+            "required": "8.0.0",
+            "stable": "9.0.0",
+            "latest": "9.0.0"
+          },
+          "collapse-white-space": {
+            "required": "1.0.6",
+            "stable": "2.1.0",
+            "latest": "2.1.0"
+          },
+          "css-units-list": {
+            "required": "1.1.0",
+            "stable": "2.0.1",
+            "latest": "2.0.1"
+          },
+          "angular-html-parser": {
+            "required": "1.8.0",
+            "stable": "4.0.0",
+            "latest": "4.0.0"
+          },
+          "remark-footnotes": {
+            "required": "2.0.0",
+            "stable": "4.0.1",
+            "latest": "4.0.1"
+          },
+          "editorconfig": {
+            "required": "0.15.3",
+            "stable": "1.0.1",
+            "latest": "1.0.1"
+          },
+          "ci-info": {
+            "required": "3.3.0",
+            "stable": "3.7.1",
+            "latest": "3.7.1"
+          },
+          "yaml-unist-parser": {
+            "required": "1.3.1",
+            "stable": "2.0.1",
+            "latest": "2.0.1"
+          },
+          "remark-math": {
+            "required": "3.0.1",
+            "stable": "5.1.1",
+            "latest": "5.1.1"
+          },
+          "cosmiconfig": {
+            "required": "7.0.1",
+            "stable": "8.0.0",
+            "latest": "8.0.0"
+          },
+          "camelcase": {
+            "required": "6.3.0",
+            "stable": "7.0.1",
+            "latest": "7.0.1"
+          },
+          "minimist": {
+            "required": "1.2.6",
+            "stable": "1.2.7",
+            "latest": "0.2.2"
+          },
+          "postcss-less": {
+            "required": "3.1.4",
+            "stable": "6.0.0",
+            "latest": "6.0.0"
+          },
+          "json5": {
+            "required": "2.2.2",
+            "stable": "2.2.3",
+            "latest": "2.2.3"
+          },
+          "diff": {
+            "required": "5.0.0",
+            "stable": "5.1.0",
+            "latest": "5.1.0"
+          },
+          "jest-docblock": {
+            "required": "28.1.1",
+            "stable": "29.2.0",
+            "latest": "29.2.0"
+          },
+          "remark-parse": {
+            "required": "8.0.3",
+            "stable": "10.0.1",
+            "latest": "10.0.1"
+          },
+          "chalk": {
+            "required": "5.0.1",
+            "stable": "5.2.0",
+            "latest": "5.2.0"
+          },
+          "postcss-selector-parser": {
+            "required": "2.2.3",
+            "stable": "6.0.11",
+            "latest": "6.0.11"
+          },
+          "semver": {
+            "required": "7.3.7",
+            "stable": "7.3.8",
+            "latest": "7.3.8"
+          },
+          "flow-parser": {
+            "required": "0.180.0",
+            "stable": "0.197.0",
+            "latest": "0.197.0"
+          },
+          "ignore": {
+            "required": "5.2.0",
+            "stable": "5.2.4",
+            "latest": "5.2.4"
+          },
+          "unified": {
+            "required": "9.2.1",
+            "stable": "10.1.2",
+            "latest": "10.1.2"
+          },
+          "postcss-scss": {
+            "required": "2.1.1",
+            "stable": "4.0.6",
+            "latest": "4.0.6"
+          },
+          "graphql": {
+            "required": "15.6.1",
+            "stable": "16.6.0",
+            "latest": "17.0.0-alpha.2.canary.pr.3754.1564174b0dc26e0adf7ff2833716d06606b06a20"
+          },
+          "postcss-values-parser": {
+            "required": "2.0.1",
+            "stable": "6.0.2",
+            "latest": "6.0.2"
+          },
+          "string-width": {
+            "required": "5.0.1",
+            "stable": "5.1.2",
+            "latest": "5.1.2"
+          },
+          "@angular/compiler": {
+            "required": "12.2.16",
+            "stable": "15.1.0",
+            "latest": "15.2.0-next.0"
+          },
+          "meriyah": {
+            "required": "4.2.1",
+            "stable": "4.3.3",
+            "latest": "4.3.3"
+          },
+          "typescript": {
+            "required": "4.9.3",
+            "stable": "4.9.4",
+            "latest": "5.0.0-dev.20230114"
+          },
+          "@typescript-eslint/typescript-estree": {
+            "required": "5.45.0",
+            "stable": "5.48.1",
+            "latest": "5.48.2-alpha.0"
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "quality": {
+        "carefulness": 0.9999999999999999,
+        "tests": 0.7484999999999999,
+        "health": 0.5,
+        "branding": 0.85
+      },
+      "popularity": {
+        "communityInterest": 48896,
+        "downloadsCount": 106634596.33333333,
+        "downloadsAcceleration": -142089.57501902594,
+        "dependentsCount": 0
+      },
+      "maintenance": {
+        "releasesFrequency": 1,
+        "commitsFrequency": 1,
+        "openIssues": 1,
+        "issuesDistribution": 0.12983930454943982
+      }
+    },
+    "score": {
+      "final": 0.907773090472954,
+      "detail": {
+        "quality": 0.9078031295831304,
+        "popularity": 0.9221611652283402,
+        "maintenance": 0.8933592679088451
+      }
+    }
+  },
+  "react": {
+    "analyzedAt": "2023-01-13T08:02:20.173Z",
+    "collected": {
+      "metadata": {
+        "name": "react",
+        "scope": "unscoped",
+        "version": "18.2.0",
+        "description": "React is a JavaScript library for building user interfaces.",
+        "keywords": [
+          "react"
+        ],
+        "date": "2022-06-14T19:46:38.369Z",
+        "publisher": {
+          "username": "gnoff",
+          "email": "jcs.gnoff@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "gaearon",
+            "email": "dan.abramov@gmail.com"
+          },
+          {
+            "username": "acdlite",
+            "email": "npm@andrewclark.io"
+          },
+          {
+            "username": "gnoff",
+            "email": "jcs.gnoff@gmail.com"
+          },
+          {
+            "username": "fb",
+            "email": "opensource+npm@fb.com"
+          },
+          {
+            "username": "trueadm",
+            "email": "dg@domgan.com"
+          },
+          {
+            "username": "sophiebits",
+            "email": "npm@sophiebits.com"
+          }
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/facebook/react.git",
+          "directory": "packages/react"
+        },
+        "links": {
+          "npm": "https://www.npmjs.com/package/react",
+          "homepage": "https://reactjs.org/",
+          "repository": "https://github.com/facebook/react",
+          "bugs": "https://github.com/facebook/react/issues"
+        },
+        "license": "MIT",
+        "dependencies": {
+          "loose-envify": "^1.1.0"
+        },
+        "releases": [
+          {
+            "from": "2022-12-14T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 25
+          },
+          {
+            "from": "2022-10-15T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 101
+          },
+          {
+            "from": "2022-07-17T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 209
+          },
+          {
+            "from": "2022-01-13T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 434
+          },
+          {
+            "from": "2021-01-13T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 885
+          }
+        ],
+        "hasSelectiveFiles": true
+      },
+      "npm": {
+        "downloads": [
+          {
+            "from": "2023-01-12T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 3385837
+          },
+          {
+            "from": "2023-01-06T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 17547077
+          },
+          {
+            "from": "2022-12-14T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 63819506
+          },
+          {
+            "from": "2022-10-15T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 217736453
+          },
+          {
+            "from": "2022-07-17T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 426593162
+          },
+          {
+            "from": "2022-01-13T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 828606518
+          }
+        ],
+        "starsCount": 793
+      },
+      "github": {
+        "homepage": "https://reactjs.org",
+        "starsCount": 200439,
+        "forksCount": 41607,
+        "subscribersCount": 6643,
+        "issues": {
+          "count": 25023,
+          "openCount": 1139,
+          "distribution": {
+            "3600": 5150,
+            "10800": 2435,
+            "32400": 2438,
+            "97200": 3183,
+            "291600": 2278,
+            "874800": 2182,
+            "2624400": 1716,
+            "7873200": 1445,
+            "23619600": 1852,
+            "70858800": 1705,
+            "212576400": 639
+          },
+          "isDisabled": false
+        },
+        "contributors": [
+          {
+            "username": "sammy-SC",
+            "commitsCount": 22
+          },
+          {
+            "username": "salazarm",
+            "commitsCount": 24
+          },
+          {
+            "username": "wincent",
+            "commitsCount": 9
+          },
+          {
+            "username": "bvaughn",
+            "commitsCount": 301
+          },
+          {
+            "username": "bgw",
+            "commitsCount": 14
+          },
+          {
+            "username": "kassens",
+            "commitsCount": 72
+          },
+          {
+            "username": "SanderSpies",
+            "commitsCount": 8
+          },
+          {
+            "username": "trueadm",
+            "commitsCount": 429
+          },
+          {
+            "username": "keyz",
+            "commitsCount": 26
+          },
+          {
+            "username": "aickin",
+            "commitsCount": 18
+          },
+          {
+            "username": "acdlite",
+            "commitsCount": 1144
+          },
+          {
+            "username": "yangshun",
+            "commitsCount": 10
+          },
+          {
+            "username": "raphamorim",
+            "commitsCount": 15
+          },
+          {
+            "username": "jgebhardt",
+            "commitsCount": 8
+          },
+          {
+            "username": "Simek",
+            "commitsCount": 15
+          },
+          {
+            "username": "motiz88",
+            "commitsCount": 10
+          },
+          {
+            "username": "elas7",
+            "commitsCount": 13
+          },
+          {
+            "username": "DarkScorpion",
+            "commitsCount": 10
+          },
+          {
+            "username": "SimenB",
+            "commitsCount": 19
+          },
+          {
+            "username": "hristo-kanchev",
+            "commitsCount": 9
+          },
+          {
+            "username": "rbalicki2",
+            "commitsCount": 8
+          },
+          {
+            "username": "sophiebits",
+            "commitsCount": 875
+          },
+          {
+            "username": "cpojer",
+            "commitsCount": 56
+          },
+          {
+            "username": "iamdustan",
+            "commitsCount": 17
+          },
+          {
+            "username": "joshduck",
+            "commitsCount": 21
+          },
+          {
+            "username": "sebmarkbage",
+            "commitsCount": 905
+          },
+          {
+            "username": "poteto",
+            "commitsCount": 21
+          },
+          {
+            "username": "lunaruan",
+            "commitsCount": 118
+          },
+          {
+            "username": "jeffmo",
+            "commitsCount": 111
+          },
+          {
+            "username": "eps1lon",
+            "commitsCount": 60
+          },
+          {
+            "username": "philipp-spiess",
+            "commitsCount": 18
+          },
+          {
+            "username": "petehunt",
+            "commitsCount": 205
+          },
+          {
+            "username": "zpao",
+            "commitsCount": 822
+          },
+          {
+            "username": "jquense",
+            "commitsCount": 18
+          },
+          {
+            "username": "koba04",
+            "commitsCount": 67
+          },
+          {
+            "username": "josephsavona",
+            "commitsCount": 13
+          },
+          {
+            "username": "tyao1",
+            "commitsCount": 19
+          },
+          {
+            "username": "KonstHardy",
+            "commitsCount": 7
+          },
+          {
+            "username": "arkist",
+            "commitsCount": 14
+          },
+          {
+            "username": "sompylasar",
+            "commitsCount": 15
+          },
+          {
+            "username": "sun1one",
+            "commitsCount": 8
+          },
+          {
+            "username": "mondaychen",
+            "commitsCount": 27
+          },
+          {
+            "username": "yiminghe",
+            "commitsCount": 9
+          },
+          {
+            "username": "benjamn",
+            "commitsCount": 68
+          },
+          {
+            "username": "subtleGradient",
+            "commitsCount": 110
+          },
+          {
+            "username": "mroch",
+            "commitsCount": 12
+          },
+          {
+            "username": "Daniel15",
+            "commitsCount": 18
+          },
+          {
+            "username": "zertosh",
+            "commitsCount": 8
+          },
+          {
+            "username": "RaitoBezarius",
+            "commitsCount": 7
+          },
+          {
+            "username": "hramos",
+            "commitsCount": 7
+          },
+          {
+            "username": "bhamodi",
+            "commitsCount": 8
+          },
+          {
+            "username": "syranide",
+            "commitsCount": 69
+          },
+          {
+            "username": "fabiomcosta",
+            "commitsCount": 15
+          },
+          {
+            "username": "raunofreiberg",
+            "commitsCount": 9
+          },
+          {
+            "username": "necolas",
+            "commitsCount": 92
+          },
+          {
+            "username": "taneliang",
+            "commitsCount": 9
+          },
+          {
+            "username": "gaearon",
+            "commitsCount": 1574
+          },
+          {
+            "username": "DenrizSusam",
+            "commitsCount": 7
+          },
+          {
+            "username": "nhunzaker",
+            "commitsCount": 94
+          },
+          {
+            "username": "fxxkscript",
+            "commitsCount": 9
+          },
+          {
+            "username": "iamchenxin",
+            "commitsCount": 13
+          },
+          {
+            "username": "rickhanlonii",
+            "commitsCount": 90
+          },
+          {
+            "username": "jimfb",
+            "commitsCount": 116
+          },
+          {
+            "username": "yungsters",
+            "commitsCount": 93
+          },
+          {
+            "username": "gnoff",
+            "commitsCount": 48
+          },
+          {
+            "username": "lucasecdb",
+            "commitsCount": 10
+          },
+          {
+            "username": "kmeht",
+            "commitsCount": 10
+          },
+          {
+            "username": "andreypopp",
+            "commitsCount": 9
+          },
+          {
+            "username": "behnammodi",
+            "commitsCount": 8
+          },
+          {
+            "username": "flarnie",
+            "commitsCount": 67
+          },
+          {
+            "username": "ianobermiller",
+            "commitsCount": 7
+          },
+          {
+            "username": "jaredly",
+            "commitsCount": 9
+          },
+          {
+            "username": "fisherwebdev",
+            "commitsCount": 10
+          },
+          {
+            "username": "onionymous",
+            "commitsCount": 7
+          },
+          {
+            "username": "marocchino",
+            "commitsCount": 45
+          },
+          {
+            "username": "camsong",
+            "commitsCount": 8
+          },
+          {
+            "username": "dependabot[bot]",
+            "commitsCount": 48
+          },
+          {
+            "username": "aweary",
+            "commitsCount": 61
+          },
+          {
+            "username": "NE-SmallTown",
+            "commitsCount": 22
+          },
+          {
+            "username": "JoshuaGross",
+            "commitsCount": 9
+          },
+          {
+            "username": "bl00mber",
+            "commitsCount": 14
+          },
+          {
+            "username": "rickbeerendonk",
+            "commitsCount": 9
+          },
+          {
+            "username": "vjeux",
+            "commitsCount": 140
+          },
+          {
+            "username": "waldreiter",
+            "commitsCount": 14
+          },
+          {
+            "username": "Andarist",
+            "commitsCount": 10
+          },
+          {
+            "username": "tomocchino",
+            "commitsCount": 13
+          },
+          {
+            "username": "chenglou",
+            "commitsCount": 126
+          },
+          {
+            "username": "TheSavior",
+            "commitsCount": 30
+          },
+          {
+            "username": "Biki-das",
+            "commitsCount": 8
+          },
+          {
+            "username": "andrewdavey",
+            "commitsCount": 7
+          },
+          {
+            "username": "RReverser",
+            "commitsCount": 9
+          },
+          {
+            "username": "chicoxyzzy",
+            "commitsCount": 29
+          },
+          {
+            "username": "kohei-takata",
+            "commitsCount": 39
+          },
+          {
+            "username": "ivanzotov",
+            "commitsCount": 11
+          },
+          {
+            "username": "hzoo",
+            "commitsCount": 8
+          },
+          {
+            "username": "clemmy",
+            "commitsCount": 9
+          },
+          {
+            "username": "mcsheffrey",
+            "commitsCount": 21
+          },
+          {
+            "username": "joecritch",
+            "commitsCount": 9
+          },
+          {
+            "username": "jddxf",
+            "commitsCount": 9
+          },
+          {
+            "username": "threepointone",
+            "commitsCount": 16
+          }
+        ],
+        "commits": [
+          {
+            "from": "2023-01-06T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 12
+          },
+          {
+            "from": "2022-12-14T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 25
+          },
+          {
+            "from": "2022-10-15T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 161
+          },
+          {
+            "from": "2022-07-17T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 356
+          },
+          {
+            "from": "2022-01-13T00:00:00.000Z",
+            "to": "2023-01-13T00:00:00.000Z",
+            "count": 721
+          }
+        ],
+        "statuses": [
+          {
+            "context": "ci/circleci: test_fuzz",
+            "state": "success"
+          },
+          {
+            "context": "ci/circleci: setup",
+            "state": "success"
+          },
+          {
+            "context": "ci/circleci: Publish to Experimental channel",
+            "state": "success"
+          },
+          {
+            "context": "ci/circleci: Publish to Next channel",
+            "state": "success"
+          }
+        ]
+      },
+      "source": {
+        "files": {
+          "readmeSize": 1162,
+          "testsSize": 381150,
+          "hasChangelog": true
+        },
+        "badges": [
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/react.svg?style=flat",
+              "shields": "https://img.shields.io/npm/v/react.svg",
+              "content": "https://img.shields.io/npm/v/react.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          },
+          {
+            "urls": {
+              "original": "https://circleci.com/gh/facebook/react.svg?circle-token=:circle-token",
+              "service": "https://circleci.com/gh/facebook/react.svg",
+              "shields": "https://img.shields.io/circleci/project/github/facebook/react.svg",
+              "content": "https://img.shields.io/circleci/project/github/facebook/react.json"
+            },
+            "info": {
+              "service": "circleci",
+              "type": "build"
+            }
+          }
+        ],
+        "linters": [
+          "editorconfig",
+          "eslint",
+          "prettier"
+        ],
+        "coverage": 0.86
+      }
+    },
+    "evaluation": {
+      "quality": {
+        "carefulness": 0.9999999999999999,
+        "tests": 0.679,
+        "health": 1,
+        "branding": 0.7
+      },
+      "popularity": {
+        "communityInterest": 249582,
+        "downloadsCount": 72578817.66666667,
+        "downloadsAcceleration": -10757.702473363839,
+        "dependentsCount": 0
+      },
+      "maintenance": {
+        "releasesFrequency": 1,
+        "commitsFrequency": 1,
+        "openIssues": 1,
+        "issuesDistribution": 0.32312146312608314
+      }
+    },
+    "score": {
+      "final": 0.9296215002155315,
+      "detail": {
+        "quality": 0.902269335310431,
+        "popularity": 0.9158908847875538,
+        "maintenance": 0.9667968284193095
+      }
+    }
+  },
+  "vite": {
+    "analyzedAt": "2023-01-09T14:24:22.763Z",
+    "collected": {
+      "metadata": {
+        "name": "vite",
+        "scope": "unscoped",
+        "version": "4.0.4",
+        "description": "Native-ESM powered web dev build tool",
+        "date": "2023-01-03T11:25:21.369Z",
+        "author": {
+          "name": "Evan You"
+        },
+        "publisher": {
+          "username": "vitebot",
+          "email": "vitejs.twitter@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "soda",
+            "email": "npm@haoqun.me"
+          },
+          {
+            "username": "vitebot",
+            "email": "vitejs.twitter@gmail.com"
+          },
+          {
+            "username": "yyx990803",
+            "email": "yyx990803@gmail.com"
+          },
+          {
+            "username": "patak",
+            "email": "matias.capeletto@gmail.com"
+          },
+          {
+            "username": "antfu",
+            "email": "anthonyfu117@hotmail.com"
+          }
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/vitejs/vite.git",
+          "directory": "packages/vite"
+        },
+        "links": {
+          "npm": "https://www.npmjs.com/package/vite",
+          "homepage": "https://github.com/vitejs/vite/tree/main/#readme",
+          "repository": "https://github.com/vitejs/vite",
+          "bugs": "https://github.com/vitejs/vite/issues"
+        },
+        "license": "MIT",
+        "dependencies": {
+          "esbuild": "^0.16.3",
+          "postcss": "^8.4.20",
+          "resolve": "^1.22.1",
+          "rollup": "^3.7.0",
+          "fsevents": "~2.3.2"
+        },
+        "devDependencies": {
+          "@ampproject/remapping": "^2.2.0",
+          "@babel/parser": "^7.20.5",
+          "@babel/types": "^7.20.5",
+          "@jridgewell/trace-mapping": "^0.3.17",
+          "@rollup/plugin-alias": "^4.0.2",
+          "@rollup/plugin-commonjs": "^24.0.0",
+          "@rollup/plugin-dynamic-import-vars": "^2.0.1",
+          "@rollup/plugin-json": "^6.0.0",
+          "@rollup/plugin-node-resolve": "15.0.1",
+          "@rollup/plugin-typescript": "^10.0.1",
+          "@rollup/pluginutils": "^5.0.2",
+          "acorn": "^8.8.1",
+          "acorn-walk": "^8.2.0",
+          "cac": "^6.7.14",
+          "chokidar": "^3.5.3",
+          "connect": "^3.7.0",
+          "connect-history-api-fallback": "^2.0.0",
+          "convert-source-map": "^2.0.0",
+          "cors": "^2.8.5",
+          "cross-spawn": "^7.0.3",
+          "debug": "^4.3.4",
+          "dep-types": "link:./src/types",
+          "dotenv": "^16.0.3",
+          "dotenv-expand": "^9.0.0",
+          "es-module-lexer": "^1.1.0",
+          "estree-walker": "^3.0.1",
+          "etag": "^1.8.1",
+          "fast-glob": "^3.2.12",
+          "http-proxy": "^1.18.1",
+          "launch-editor-middleware": "^2.6.0",
+          "magic-string": "^0.27.0",
+          "micromatch": "^4.0.5",
+          "mlly": "^1.0.0",
+          "mrmime": "^1.0.1",
+          "okie": "^1.0.1",
+          "open": "^8.4.0",
+          "parse5": "^7.1.2",
+          "periscopic": "^3.0.4",
+          "picocolors": "^1.0.0",
+          "picomatch": "^2.3.1",
+          "postcss-import": "^15.1.0",
+          "postcss-load-config": "^4.0.1",
+          "postcss-modules": "^6.0.0",
+          "resolve.exports": "^1.1.0",
+          "rollup-plugin-license": "^3.0.1",
+          "sirv": "^2.0.2",
+          "source-map-js": "^1.0.2",
+          "source-map-support": "^0.5.21",
+          "strip-ansi": "^7.0.1",
+          "strip-literal": "^0.4.2",
+          "tsconfck": "^2.0.1",
+          "tslib": "^2.4.1",
+          "types": "link:./types",
+          "ufo": "^1.0.1",
+          "ws": "^8.11.0"
+        },
+        "peerDependencies": {
+          "@types/node": ">= 14",
+          "less": "*",
+          "sass": "*",
+          "stylus": "*",
+          "sugarss": "*",
+          "terser": "^5.4.0"
+        },
+        "optionalDependencies": {
+          "fsevents": "~2.3.2"
+        },
+        "releases": [
+          {
+            "from": "2022-12-10T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 4
+          },
+          {
+            "from": "2022-10-11T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 30
+          },
+          {
+            "from": "2022-07-13T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 54
+          },
+          {
+            "from": "2022-01-09T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 122
+          },
+          {
+            "from": "2021-01-09T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 275
+          }
+        ],
+        "hasSelectiveFiles": true
+      },
+      "npm": {
+        "downloads": [
+          {
+            "from": "2023-01-08T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 144836
+          },
+          {
+            "from": "2023-01-02T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 2277753
+          },
+          {
+            "from": "2022-12-10T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 8875728
+          },
+          {
+            "from": "2022-10-11T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 28265043
+          },
+          {
+            "from": "2022-07-13T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 48801733
+          },
+          {
+            "from": "2022-01-09T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 69857547
+          }
+        ],
+        "starsCount": 8
+      },
+      "github": {
+        "homepage": "http://vitejs.dev",
+        "starsCount": 51296,
+        "forksCount": 4440,
+        "subscribersCount": 392,
+        "issues": {
+          "count": 9041,
+          "openCount": 590,
+          "distribution": {
+            "3600": 1316,
+            "10800": 817,
+            "32400": 999,
+            "97200": 1141,
+            "291600": 918,
+            "874800": 1040,
+            "2624400": 730,
+            "7873200": 742,
+            "23619600": 870,
+            "70858800": 467,
+            "212576400": 1
+          },
+          "isDisabled": false
+        },
+        "contributors": [
+          {
+            "username": "yyx990803",
+            "commitsCount": 1893
+          },
+          {
+            "username": "patak-dev",
+            "commitsCount": 626
+          },
+          {
+            "username": "sapphi-red",
+            "commitsCount": 322
+          },
+          {
+            "username": "bluwy",
+            "commitsCount": 263
+          },
+          {
+            "username": "antfu",
+            "commitsCount": 228
+          },
+          {
+            "username": "underfin",
+            "commitsCount": 110
+          },
+          {
+            "username": "renovate[bot]",
+            "commitsCount": 106
+          },
+          {
+            "username": "Shinigami92",
+            "commitsCount": 93
+          },
+          {
+            "username": "aleclarson",
+            "commitsCount": 87
+          },
+          {
+            "username": "poyoho",
+            "commitsCount": 77
+          },
+          {
+            "username": "benmccann",
+            "commitsCount": 66
+          },
+          {
+            "username": "ygj6",
+            "commitsCount": 48
+          },
+          {
+            "username": "sodatea",
+            "commitsCount": 45
+          },
+          {
+            "username": "dominikg",
+            "commitsCount": 31
+          },
+          {
+            "username": "ydcjeff",
+            "commitsCount": 30
+          },
+          {
+            "username": "OneNail",
+            "commitsCount": 30
+          },
+          {
+            "username": "ArnaudBarre",
+            "commitsCount": 30
+          },
+          {
+            "username": "CHOYSEN",
+            "commitsCount": 28
+          },
+          {
+            "username": "brillout",
+            "commitsCount": 27
+          },
+          {
+            "username": "csr632",
+            "commitsCount": 24
+          },
+          {
+            "username": "nihalgonsalves",
+            "commitsCount": 20
+          },
+          {
+            "username": "renovate-bot",
+            "commitsCount": 19
+          },
+          {
+            "username": "cawa-93",
+            "commitsCount": 18
+          },
+          {
+            "username": "Dunqing",
+            "commitsCount": 15
+          },
+          {
+            "username": "IanVS",
+            "commitsCount": 15
+          },
+          {
+            "username": "Niputi",
+            "commitsCount": 13
+          },
+          {
+            "username": "btea",
+            "commitsCount": 13
+          },
+          {
+            "username": "daychongyang",
+            "commitsCount": 12
+          },
+          {
+            "username": "remorses",
+            "commitsCount": 12
+          },
+          {
+            "username": "egoist",
+            "commitsCount": 12
+          },
+          {
+            "username": "fwouts",
+            "commitsCount": 12
+          },
+          {
+            "username": "pd4d10",
+            "commitsCount": 12
+          },
+          {
+            "username": "fi3ework",
+            "commitsCount": 12
+          },
+          {
+            "username": "ElMassimo",
+            "commitsCount": 11
+          },
+          {
+            "username": "iheyunfei",
+            "commitsCount": 10
+          },
+          {
+            "username": "zheeeng",
+            "commitsCount": 10
+          },
+          {
+            "username": "tony19",
+            "commitsCount": 10
+          },
+          {
+            "username": "GrygrFlzr",
+            "commitsCount": 9
+          },
+          {
+            "username": "hannoeru",
+            "commitsCount": 9
+          },
+          {
+            "username": "TrySound",
+            "commitsCount": 9
+          },
+          {
+            "username": "frandiox",
+            "commitsCount": 9
+          },
+          {
+            "username": "matthewp",
+            "commitsCount": 9
+          },
+          {
+            "username": "Rich-Harris",
+            "commitsCount": 8
+          },
+          {
+            "username": "manucorporat",
+            "commitsCount": 8
+          },
+          {
+            "username": "jamesgeorge007",
+            "commitsCount": 7
+          },
+          {
+            "username": "AlexandreBonaventure",
+            "commitsCount": 7
+          },
+          {
+            "username": "zhangyuang",
+            "commitsCount": 7
+          },
+          {
+            "username": "kiaking",
+            "commitsCount": 7
+          },
+          {
+            "username": "caoxiemeihao",
+            "commitsCount": 7
+          },
+          {
+            "username": "kazupon",
+            "commitsCount": 6
+          },
+          {
+            "username": "threepointone",
+            "commitsCount": 6
+          },
+          {
+            "username": "g-plane",
+            "commitsCount": 6
+          },
+          {
+            "username": "DreierF",
+            "commitsCount": 6
+          },
+          {
+            "username": "jonaskuske",
+            "commitsCount": 6
+          },
+          {
+            "username": "sibbng",
+            "commitsCount": 6
+          },
+          {
+            "username": "meteorlxy",
+            "commitsCount": 6
+          },
+          {
+            "username": "innocenzi",
+            "commitsCount": 6
+          },
+          {
+            "username": "sanyuan0704",
+            "commitsCount": 6
+          },
+          {
+            "username": "tjk",
+            "commitsCount": 6
+          },
+          {
+            "username": "mathieumure",
+            "commitsCount": 5
+          },
+          {
+            "username": "anncwb",
+            "commitsCount": 5
+          },
+          {
+            "username": "ferdinando-ferreira",
+            "commitsCount": 5
+          },
+          {
+            "username": "andylizi",
+            "commitsCount": 5
+          },
+          {
+            "username": "jay-es",
+            "commitsCount": 5
+          },
+          {
+            "username": "Artur-",
+            "commitsCount": 5
+          },
+          {
+            "username": "sxzz",
+            "commitsCount": 5
+          },
+          {
+            "username": "dev-itsheng",
+            "commitsCount": 5
+          },
+          {
+            "username": "sun0day",
+            "commitsCount": 5
+          },
+          {
+            "username": "nanaian",
+            "commitsCount": 4
+          },
+          {
+            "username": "MangoTsing",
+            "commitsCount": 4
+          },
+          {
+            "username": "stafyniaksacha",
+            "commitsCount": 4
+          },
+          {
+            "username": "dependabot[bot]",
+            "commitsCount": 4
+          },
+          {
+            "username": "Holorium",
+            "commitsCount": 4
+          },
+          {
+            "username": "drwpow",
+            "commitsCount": 4
+          },
+          {
+            "username": "j-maas",
+            "commitsCount": 4
+          },
+          {
+            "username": "sosukesuzuki",
+            "commitsCount": 4
+          },
+          {
+            "username": "stygian-desolator",
+            "commitsCount": 4
+          },
+          {
+            "username": "cyco130",
+            "commitsCount": 4
+          },
+          {
+            "username": "fireairforce",
+            "commitsCount": 4
+          },
+          {
+            "username": "PengBoUESTC",
+            "commitsCount": 4
+          },
+          {
+            "username": "fc",
+            "commitsCount": 4
+          },
+          {
+            "username": "Gumball12",
+            "commitsCount": 4
+          },
+          {
+            "username": "reed-jones",
+            "commitsCount": 3
+          },
+          {
+            "username": "tanhauhau",
+            "commitsCount": 3
+          },
+          {
+            "username": "timozander",
+            "commitsCount": 3
+          },
+          {
+            "username": "bompus",
+            "commitsCount": 3
+          },
+          {
+            "username": "xrkffgg",
+            "commitsCount": 3
+          },
+          {
+            "username": "edison1105",
+            "commitsCount": 3
+          },
+          {
+            "username": "zigomir",
+            "commitsCount": 3
+          },
+          {
+            "username": "xiaoxiangmoe",
+            "commitsCount": 3
+          },
+          {
+            "username": "posva",
+            "commitsCount": 3
+          },
+          {
+            "username": "meowtec",
+            "commitsCount": 3
+          },
+          {
+            "username": "hehex9",
+            "commitsCount": 3
+          },
+          {
+            "username": "Amour1688",
+            "commitsCount": 3
+          },
+          {
+            "username": "Sociosarbis",
+            "commitsCount": 3
+          },
+          {
+            "username": "SegaraRai",
+            "commitsCount": 3
+          },
+          {
+            "username": "HerringtonDarkholme",
+            "commitsCount": 3
+          },
+          {
+            "username": "webfansplz",
+            "commitsCount": 3
+          },
+          {
+            "username": "tmkx",
+            "commitsCount": 3
+          },
+          {
+            "username": "hyrious",
+            "commitsCount": 3
+          }
+        ],
+        "commits": [
+          {
+            "from": "2023-01-02T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 2
+          },
+          {
+            "from": "2022-12-10T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 79
+          },
+          {
+            "from": "2022-10-11T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 348
+          },
+          {
+            "from": "2022-07-13T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 674
+          },
+          {
+            "from": "2022-01-09T00:00:00.000Z",
+            "to": "2023-01-09T00:00:00.000Z",
+            "count": 1639
+          }
+        ]
+      },
+      "source": {
+        "files": {
+          "readmeSize": 1164,
+          "testsSize": 116322,
+          "hasChangelog": true
+        },
+        "badges": [
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/vite.svg",
+              "shields": "https://img.shields.io/npm/v/vite.svg",
+              "content": "https://img.shields.io/npm/v/vite.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          },
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/vite.svg?label=",
+              "shields": "https://img.shields.io/npm/v/vite.svg",
+              "content": "https://img.shields.io/npm/v/vite.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          },
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/@vitejs/plugin-legacy.svg?label=",
+              "shields": "https://img.shields.io/npm/v/@vitejs/plugin-legacy.svg",
+              "content": "https://img.shields.io/npm/v/@vitejs/plugin-legacy.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          },
+          {
+            "urls": {
+              "original": "https://img.shields.io/npm/v/create-vite.svg?label=",
+              "shields": "https://img.shields.io/npm/v/create-vite.svg",
+              "content": "https://img.shields.io/npm/v/create-vite.json"
+            },
+            "info": {
+              "service": "npm",
+              "type": "version",
+              "modifiers": {
+                "type": "v"
+              }
+            }
+          }
+        ],
+        "linters": [
+          "editorconfig",
+          "eslint",
+          "prettier"
+        ]
+      }
+    },
+    "evaluation": {
+      "quality": {
+        "carefulness": 0.9999999999999999,
+        "tests": 0.3,
+        "health": 1,
+        "branding": 0.6
+      },
+      "popularity": {
+        "communityInterest": 56236,
+        "downloadsCount": 9421681,
+        "downloadsAcceleration": 46049.31485920852,
+        "dependentsCount": 0
+      },
+      "maintenance": {
+        "releasesFrequency": 1,
+        "commitsFrequency": 1,
+        "openIssues": 1,
+        "issuesDistribution": 0.6965460226033282
+      }
+    },
+    "score": {
+      "final": 0.837474593626885,
+      "detail": {
+        "quality": 0.8328452246914599,
+        "popularity": 0.6802341966841025,
+        "maintenance": 0.9986830210857464
+      }
+    }
+  }
+}
